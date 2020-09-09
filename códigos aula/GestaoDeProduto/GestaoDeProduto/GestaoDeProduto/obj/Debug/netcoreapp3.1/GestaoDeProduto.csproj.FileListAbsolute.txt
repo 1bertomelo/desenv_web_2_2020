@@ -18,3 +18,23 @@ E:\Faculdade\2020_2\programação web\projeto\GestaoDeProduto\GestaoDeProduto\Ge
 E:\Faculdade\2020_2\programação web\projeto\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.dll
 E:\Faculdade\2020_2\programação web\projeto\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.pdb
 E:\Faculdade\2020_2\programação web\projeto\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.genruntimeconfig.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\GestaoDeProduto.exe
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\GestaoDeProduto.deps.json
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\GestaoDeProduto.runtimeconfig.json
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\GestaoDeProduto.runtimeconfig.dev.json
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\GestaoDeProduto.dll
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\GestaoDeProduto.pdb
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.csprojAssemblyReference.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.AssemblyInfoInputs.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.AssemblyInfo.cs
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.csproj.CoreCompileInputs.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.MvcApplicationPartsAssemblyInfo.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.RazorTargetAssemblyInfo.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\staticwebassets\GestaoDeProduto.StaticWebAssets.Manifest.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\staticwebassets\GestaoDeProduto.StaticWebAssets.xml
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.dll
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.pdb
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.genruntimeconfig.cache

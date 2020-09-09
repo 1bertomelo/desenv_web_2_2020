@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Faculdade\\2020_2\\programação web\\projeto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto.csproj",
+      "projectUniqueName": "E:\\Faculdade\\2020_2\\programação web\\códigos\\códigos aula\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto.csproj",
       "projectName": "GestaoDeProduto",
-      "projectPath": "E:\\Faculdade\\2020_2\\programação web\\projeto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto.csproj",
+      "projectPath": "E:\\Faculdade\\2020_2\\programação web\\códigos\\códigos aula\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto.csproj",
       "packagesPath": "C:\\Users\\famil\\.nuget\\packages\\",
-      "outputPath": "E:\\Faculdade\\2020_2\\programação web\\projeto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\obj\\",
+      "outputPath": "E:\\Faculdade\\2020_2\\programação web\\códigos\\códigos aula\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
