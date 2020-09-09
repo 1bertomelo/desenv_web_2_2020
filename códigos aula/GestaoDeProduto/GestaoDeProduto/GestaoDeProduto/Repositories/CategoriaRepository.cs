@@ -14,16 +14,19 @@ namespace GestaoDeProduto.Repositories
             listaCategorias.Add(new Categoria() { id = 1, titulo = "Eletronicos" });
             listaCategorias.Add(new Categoria() { id = 2, titulo = "Telefonia" });
         }
-
-        public Categoria BuscarCategoriaPorId(int id)
+        
+        public Categoria BuscarCategoriaPorId(int pid)
         {
             //sintaxe linq
-            return listaCategorias.Where( x => x.id == id).FirstOrDefault();
+            //operador Where() fazer filtros
+            //categoria quero filtrar uma categoria pelo id dela
+            // colecao.Where( colocarVariavel => operacao relacional  );
+            return listaCategorias.Where( x => x.id == pid).FirstOrDefault();
         }
 
         public void InserirCategoria(Categoria categoria)
         {
-            throw new NotImplementedException();
+            listaCategorias.Add(categoria);
         }
 
         public IList<Categoria> ListarTodasCategorias()
