@@ -1,4 +1,5 @@
 ﻿using GestaoDeProduto.Models;
+using GestaoDeProduto.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,9 +25,14 @@ namespace GestaoDeProduto.Repositories
             return listaCategorias.Where( x => x.id == pid).FirstOrDefault();
         }
 
-        public void InserirCategoria(Categoria categoria)
+        public void InserirCategoria(Categoria categoria) 
         {
-            listaCategorias.Add(categoria);
+            var validator = new CategoriaValidator();
+            var validRes = validator.Validate(categoria);
+            if (validRes.IsValid)
+                listaCategorias.Add(categoria);
+            else
+                throw new Exception(validRes.Errors.FirstOrDefault().ToString());
         }
 
         public IList<Categoria> ListarTodasCategorias()

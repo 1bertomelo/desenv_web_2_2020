@@ -34,10 +34,7 @@ namespace GestaoDeProduto.Controllers
             return Ok(categoriaResposta); 
         }
         [HttpPost]
-        public async Task<IActionResult> Post(Categoria categoria) {
-            if (string.IsNullOrEmpty(categoria.titulo)) {
-                return BadRequest("Titulo e obrigatorio");
-            }
+        public async Task<IActionResult> Post(Categoria categoria) {         
             _repository.InserirCategoria(categoria);
             return Ok("Categoria criada com sucesso"); 
         }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ykg9eB4lK28Dziya8ZkGfHSV/Nd0nV9ANl+IETGI9FZE8KVBDsSTjviqm41mRbRW52dS/wr4pSnL3ft3uNNFig==",
+  "dgSpecHash": "0R6UzNEQy6l0kOei2gtBeJGz3i5sBd7JnZr7y2aUTjVNsre8XgUv+rMaSCW2NJ5Sq4wExOJAdtN2DVe/iBiN3g==",
   "success": true,
   "projectFilePath": "E:\\Faculdade\\2020_2\\programação web\\códigos\\códigos aula\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto\\GestaoDeProduto.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\famil\\.nuget\\packages\\fluentvalidation\\9.2.2\\fluentvalidation.9.2.2.nupkg.sha512"
+  ],
   "logs": []
 }
