@@ -14,7 +14,13 @@ namespace GestaoDeProduto.Validators
         {
             RuleFor(p => p.titulo)
                .NotEmpty().WithMessage("Nome obrigatório.")
-               .NotNull().WithMessage("Nome obrigatório.");
+               .NotNull().WithMessage("Nome obrigatório.")
+               .Must(nomeValido).WithMessage("Nome contem números , só é permitido letras");
+        }
+
+        private bool nomeValido(string nome)
+        {
+            return nome.All(Char.IsLetter);
         }
     }
 }
