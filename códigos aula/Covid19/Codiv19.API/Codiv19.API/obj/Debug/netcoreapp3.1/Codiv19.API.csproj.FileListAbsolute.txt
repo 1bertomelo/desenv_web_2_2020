@@ -10,11 +10,13 @@ E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.csprojAssemblyReference.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.AssemblyInfoInputs.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.AssemblyInfo.cs
-E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.csproj.CoreCompileInputs.cache
-E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.MvcApplicationPartsAssemblyInfo.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.RazorTargetAssemblyInfo.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\staticwebassets\Codiv19.API.StaticWebAssets.Manifest.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\staticwebassets\Codiv19.API.StaticWebAssets.xml
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.dll
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.pdb
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.genruntimeconfig.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.csproj.CoreCompileInputs.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.MvcApplicationPartsAssemblyInfo.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\bin\Debug\netcoreapp3.1\FluentValidation.dll
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\Covid19\Codiv19.API\Codiv19.API\obj\Debug\netcoreapp3.1\Codiv19.API.csproj.CopyComplete

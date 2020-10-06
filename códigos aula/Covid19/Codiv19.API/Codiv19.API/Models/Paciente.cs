@@ -17,6 +17,7 @@ namespace Codiv19.API.Models
         public string estadoCivil { get; set; }
         public bool flComorbidade { get; set; }
         public DateTime dataRegistro { get; set; }
-      
+        public string cpf { get; set; }
+
     }
 }
