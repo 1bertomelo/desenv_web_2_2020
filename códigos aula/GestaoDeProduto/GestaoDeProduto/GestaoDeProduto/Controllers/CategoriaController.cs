@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GestaoDeProduto.Context;
 using GestaoDeProduto.Models;
 using GestaoDeProduto.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +12,8 @@ namespace GestaoDeProduto.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriaController : ControllerBase
+    public class CategoriaController: ControllerBase
+        
     {
         private CategoriaRepository _repository;
 

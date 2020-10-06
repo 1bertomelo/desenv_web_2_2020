@@ -1,5 +1,7 @@
-﻿using GestaoDeProduto.Models;
+﻿using GestaoDeProduto.Context;
+using GestaoDeProduto.Models;
 using GestaoDeProduto.Validators;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,37 +9,35 @@ using System.Threading.Tasks;
 
 namespace GestaoDeProduto.Repositories
 {
-    public class CategoriaRepository : ICategoriaRepository
+    public class CategoriaRepository
     {
-        private IList<Categoria> listaCategorias = new List<Categoria>();
+        private GestaoDeProdutoContext context;
+
         public CategoriaRepository()
         {
-            listaCategorias.Add(new Categoria() { id = 1, titulo = "Eletronicos" });
-            listaCategorias.Add(new Categoria() { id = 2, titulo = "Telefonia" });
+            context = new GestaoDeProdutoContext();
         }
         
         public Categoria BuscarCategoriaPorId(int pid)
         {
-            //sintaxe linq
-            //operador Where() fazer filtros
-            //categoria quero filtrar uma categoria pelo id dela
-            // colecao.Where( colocarVariavel => operacao relacional  );
-            return listaCategorias.Where( x => x.id == pid).FirstOrDefault();
+            return context.categoria.ToList().Where(x => x.id == pid).FirstOrDefault();
         }
 
-        public void InserirCategoria(Categoria categoria) 
+        public void InserirCategoria(Categoria categoria)
         {
             var validator = new CategoriaValidator();
             var validRes = validator.Validate(categoria);
-            if (validRes.IsValid)
-                listaCategorias.Add(categoria);
+            if (validRes.IsValid)  {
+                context.categoria.Add(categoria);
+                context.SaveChanges();
+            }
             else
                 throw new Exception(validRes.Errors.FirstOrDefault().ToString());
         }
 
         public IList<Categoria> ListarTodasCategorias()
         {
-            return listaCategorias;
+            return context.categoria.ToList();
         }
     }
 }
