@@ -20,8 +20,8 @@ namespace GestaoDeProduto.Context
         {
         }
 
-        public virtual DbSet<Produto> produto { get; set; }
-        public virtual DbSet<Categoria> categoria { get; set; }
+        public virtual DbSet<Produto> produtos { get; set; }
+        public virtual DbSet<Categoria> categorias { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

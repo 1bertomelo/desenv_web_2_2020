@@ -20,7 +20,7 @@ namespace GestaoDeProduto.Repositories
         
         public Categoria BuscarCategoriaPorId(int pid)
         {
-            return context.categoria.ToList().Where(x => x.id == pid).FirstOrDefault();
+            return context.categorias.ToList().Where(x => x.id == pid).FirstOrDefault();
         }
 
         public void InserirCategoria(Categoria categoria)
@@ -28,7 +28,7 @@ namespace GestaoDeProduto.Repositories
             var validator = new CategoriaValidator();
             var validRes = validator.Validate(categoria);
             if (validRes.IsValid)  {
-                context.categoria.Add(categoria);
+                context.categorias.Add(categoria);
                 context.SaveChanges();
             }
             else
@@ -37,7 +37,7 @@ namespace GestaoDeProduto.Repositories
 
         public IList<Categoria> ListarTodasCategorias()
         {
-            return context.categoria.ToList();
+            return context.categorias.ToList();
         }
     }
 }
