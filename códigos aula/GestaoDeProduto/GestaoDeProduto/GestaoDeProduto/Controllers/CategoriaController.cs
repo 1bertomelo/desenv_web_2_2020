@@ -41,8 +41,8 @@ namespace GestaoDeProduto.Controllers
             _repository.InserirCategoria(categoria);
             return Ok("Categoria criada com sucesso"); 
         }
-        [HttpPut]
-        public async Task<IActionResult> Put(int id, Categoria categoria) {
+        [HttpPut("{id}")]
+         public async Task<IActionResult> Put(int id, Categoria categoria) {
             _repository.AtualizarCategoria(id,categoria);
             return Ok("Categoria atualizada com sucesso"); 
         
