@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using GestaoDeProduto.Context;
 using GestaoDeProduto.Models;
@@ -41,9 +42,20 @@ namespace GestaoDeProduto.Controllers
             return Ok("Categoria criada com sucesso"); 
         }
         [HttpPut]
-        public async Task<IActionResult> Put(int id, Categoria categoria) { return Ok("Categoria atualizada com sucesso"); }
-        [HttpDelete]
-        public async Task<IActionResult> Delete(int id) { return Ok("Categoria removida com sucesso!"); }
+        public async Task<IActionResult> Put(int id, Categoria categoria) {
+            _repository.AtualizarCategoria(id,categoria);
+            return Ok("Categoria atualizada com sucesso"); 
+        
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id) {
+
+            _repository.RemoverCategoria(id);
+
+            return Ok("Categoria removida com sucesso");
+
+        }
 
     }
 }
