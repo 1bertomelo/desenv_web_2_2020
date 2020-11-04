@@ -78,5 +78,6 @@ E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\Ges
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.csproj.CoreCompileInputs.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto\obj\Debug\netcoreapp3.1\GestaoDeProduto.MvcApplicationPartsAssemblyInfo.cache

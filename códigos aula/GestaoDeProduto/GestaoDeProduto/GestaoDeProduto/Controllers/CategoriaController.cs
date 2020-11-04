@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GestaoDeProduto.Context;
 using GestaoDeProduto.Models;
 using GestaoDeProduto.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +14,7 @@ namespace GestaoDeProduto.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "administrador")]
     public class CategoriaController: ControllerBase
         
     {
