@@ -5,11 +5,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using Codiv19.API.Models;
 using Codiv19.API.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Codiv19.API.Controllers
 {
+    [Authorize(Roles = "administrador")]
     [Route("api/[controller]")]
     [ApiController]
     public class PacienteController : ControllerBase
