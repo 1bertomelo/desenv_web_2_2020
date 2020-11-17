@@ -19,7 +19,7 @@ namespace GestaoDeProduto.Repositories
             context = new GestaoDeProdutoContext();
         }
 
-        public void AtualizarCategoria(int id, Categoria categoria)
+        public void AtualizarCategoria(Categoria categoria)
         {
             //var resultadoCategoria = BuscarCategoriaPorId(id);
             //if (resultadoCategoria == null)
@@ -36,16 +36,11 @@ namespace GestaoDeProduto.Repositories
             return context.categorias.ToList().Where(x => x.id == pid).FirstOrDefault();
         }
 
-        public void InserirCategoria(Categoria categoria)
+        public int InserirCategoria(Categoria categoria)
         {
-            var validator = new CategoriaValidator();
-            var validRes = validator.Validate(categoria);
-            if (validRes.IsValid)  {
                 context.categorias.Add(categoria);
                 context.SaveChanges();
-            }
-            else
-                throw new Exception(validRes.Errors.FirstOrDefault().ToString());
+                return categoria.id;
         }
 
         public IList<Categoria> ListarTodasCategorias()
@@ -53,14 +48,14 @@ namespace GestaoDeProduto.Repositories
             return context.categorias.ToList();
         }
 
-        public void RemoverCategoria(int id)
+        public IList<Categoria> BuscarCategoriaPorTitulo(string titulo)
         {
-            var resultadoCategoria = BuscarCategoriaPorId(id);
-           if (resultadoCategoria == null)
-           {
-                throw new ArgumentException("Categoria não existe");
-           }
-            context.categorias.Remove(resultadoCategoria);
+            return context.categorias.Where( c => c.titulo.StartsWith(titulo)).ToList();
+        }
+
+        public void RemoverCategoria(Categoria categoria)
+        {           
+            context.categorias.Remove(categoria);
             context.SaveChanges();
         }
     }

@@ -10,13 +10,15 @@ namespace GestaoDeProduto.Repositories
     {
         public IList<Categoria> ListarTodasCategorias();
 
+        public IList<Categoria> BuscarCategoriaPorTitulo(string titulo);
+
         public Categoria BuscarCategoriaPorId(int id);
 
-        public void InserirCategoria(Categoria categoria);
+        public int InserirCategoria(Categoria categoria);
 
-        public void RemoverCategoria(int id);
+        public void RemoverCategoria(Categoria categoria);
 
-        public void AtualizarCategoria(int id, Categoria categoria);
+        public void AtualizarCategoria(Categoria categoria);
 
     }
 }
