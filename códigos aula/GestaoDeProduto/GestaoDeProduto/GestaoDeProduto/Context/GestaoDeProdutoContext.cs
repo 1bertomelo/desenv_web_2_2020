@@ -23,6 +23,9 @@ namespace GestaoDeProduto.Context
         public virtual DbSet<Produto> produtos { get; set; }
         public virtual DbSet<Categoria> categorias { get; set; }
 
+        public virtual DbSet<Login> logins { get; set; }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

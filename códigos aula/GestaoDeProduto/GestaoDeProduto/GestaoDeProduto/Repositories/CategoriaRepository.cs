@@ -20,12 +20,7 @@ namespace GestaoDeProduto.Repositories
         }
 
         public void AtualizarCategoria(Categoria categoria)
-        {
-            //var resultadoCategoria = BuscarCategoriaPorId(id);
-            //if (resultadoCategoria == null)
-            //{
-            //    throw new ArgumentException("Categoria não existe");
-            //}
+        {            
             context.Entry(categoria).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             context.SaveChanges();
 
