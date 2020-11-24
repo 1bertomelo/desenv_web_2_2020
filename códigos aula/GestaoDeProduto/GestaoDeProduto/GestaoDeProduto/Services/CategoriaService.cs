@@ -10,16 +10,16 @@ namespace GestaoDeProduto.Services
 {
     public class CategoriaService : ICategoriaService
     {
-        private CategoriaRepository _repository;
+        private ICategoriaRepository _repository;
 
-        public CategoriaService()
+        public CategoriaService(ICategoriaRepository repository)
         {
-            _repository = new CategoriaRepository();
+            _repository = repository;// new CategoriaRepository();
         }
 
         public void atualizar(int id , Categoria categoria)
         {
-            var resultadoCategoria = this.buscarCategoriaPorId(id);
+            var resultadoCategoria = this.buscaPorId(id);
             if (resultadoCategoria == null)
             {
                 throw new ArgumentException("Categoria não existe");
@@ -30,7 +30,7 @@ namespace GestaoDeProduto.Services
 
         public Categoria buscaPorId(int id)
         {
-            throw new NotImplementedException();
+            return _repository.BuscarCategoriaPorId(id);
         }
 
         public IList<Categoria> buscaPorTitulo(string titulo)
@@ -38,10 +38,7 @@ namespace GestaoDeProduto.Services
             return _repository.BuscarCategoriaPorTitulo(titulo);
         }
 
-        public Categoria buscarCategoriaPorId(int id)
-        {
-            return _repository.BuscarCategoriaPorId(id);
-        }
+     
 
         public IList<Categoria> buscaTodasCategorias()
         {
@@ -62,7 +59,7 @@ namespace GestaoDeProduto.Services
 
         public void remover(int id)
         {
-            var resultadoCategoria = buscarCategoriaPorId(id);
+            var resultadoCategoria = buscaPorId(id);
             if (resultadoCategoria == null)
             {
                 throw new ArgumentException("Categoria não existe");

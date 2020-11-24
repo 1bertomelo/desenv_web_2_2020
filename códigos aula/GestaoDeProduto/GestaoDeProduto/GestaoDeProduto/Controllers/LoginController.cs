@@ -1,5 +1,6 @@
 ﻿using GestaoDeProduto.Models;
 using GestaoDeProduto.Repositories;
+using GestaoDeProduto.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,11 +14,12 @@ namespace GestaoDeProduto.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        private LoginRepository _repository;
+        private  readonly ILoginService _services;
 
-        public LoginController()
+
+        public LoginController(ILoginService services)
         {
-            _repository = new LoginRepository();
+            _services = services;
         }
 
 
@@ -27,7 +29,7 @@ namespace GestaoDeProduto.Controllers
         [Route("autenticacao")]
         public async Task<ActionResult<dynamic>> Authenticate([FromBody] Login model)
         {
-            var user = _repository.GetLogin(model);
+            var user = _services.GetLogin(model);
 
             if (user == null)
                 return NotFound(new { message = "Usuário ou senha inválidos" });

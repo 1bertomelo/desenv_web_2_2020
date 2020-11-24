@@ -19,11 +19,11 @@ namespace GestaoDeProduto.Controllers
     public class CategoriaController: ControllerBase
         
     {
-        private CategoriaService _services;
+        private readonly ICategoriaService _services;
 
-        public CategoriaController()
+        public CategoriaController(ICategoriaService services)
         {
-            _services = new CategoriaService();
+            _services = services;
         }
 
         [HttpGet]
@@ -34,7 +34,7 @@ namespace GestaoDeProduto.Controllers
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id) {
-            var categoriaResposta = _services.buscarCategoriaPorId(id);
+            var categoriaResposta = _services.buscaPorId(id);
             if (categoriaResposta == null){
                 return NotFound();
             }

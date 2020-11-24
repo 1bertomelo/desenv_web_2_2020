@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GestaoDeProduto.Context;
 using GestaoDeProduto.Models;
 using GestaoDeProduto.Repositories;
+using GestaoDeProduto.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,6 +56,11 @@ namespace GestaoDeProduto
                     ValidateAudience = false
                 };
             });
+            services.AddScoped<GestaoDeProdutoContext, GestaoDeProdutoContext>();
+            services.AddTransient<ICategoriaService, CategoriaService>();
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            services.AddTransient<ILoginService, LoginService>();
+            services.AddTransient<ILoginRepository, LoginRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

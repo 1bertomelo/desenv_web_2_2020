@@ -12,9 +12,9 @@ namespace GestaoDeProduto.Repositories
 
         private GestaoDeProdutoContext context;
 
-        public LoginRepository()
+        public LoginRepository(GestaoDeProdutoContext _context)
         {
-            context = new GestaoDeProdutoContext();
+            context = _context; //new GestaoDeProdutoContext();
         }
 
         //public Login GetLogin(Login login)

@@ -14,9 +14,9 @@ namespace GestaoDeProduto.Repositories
     {
         private GestaoDeProdutoContext context;
 
-        public CategoriaRepository()
+        public CategoriaRepository(GestaoDeProdutoContext _context)
         {
-            context = new GestaoDeProdutoContext();
+            context = _context;// new GestaoDeProdutoContext();
         }
 
         public void AtualizarCategoria(Categoria categoria)
