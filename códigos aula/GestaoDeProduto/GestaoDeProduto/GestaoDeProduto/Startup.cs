@@ -18,6 +18,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 namespace GestaoDeProduto
 {
@@ -56,6 +58,30 @@ namespace GestaoDeProduto
                     ValidateAudience = false
                 };
             });
+
+            services.AddSwaggerGen(c => {
+
+                c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+                {
+                    Description = "Standard Authorization header using the Bearer scheme. Example: \"bearer {token}\"",
+                    In = ParameterLocation.Header,
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
+                });
+                c.OperationFilter<SecurityRequirementsOperationFilter>();
+                c.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "Registro Pacientes COVID",
+                        Version = "v1",
+                        Description = "Exemplo de API REST criada com o ASP.NET Core 3 para consulta de registros de pacientes com COVID",
+                        Contact = new OpenApiContact
+                        {
+                            Name = "H1",
+                            Url = new Uri("https://github.com/1bertomelo/desenv_web_2_2020")
+                        }
+                    });
+            });
             services.AddScoped<GestaoDeProdutoContext, GestaoDeProdutoContext>();
             services.AddTransient<ICategoriaService, CategoriaService>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
@@ -70,6 +96,10 @@ namespace GestaoDeProduto
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Indicadores Econômicos V1");
+            });
 
             app.UseHttpsRedirection();
 

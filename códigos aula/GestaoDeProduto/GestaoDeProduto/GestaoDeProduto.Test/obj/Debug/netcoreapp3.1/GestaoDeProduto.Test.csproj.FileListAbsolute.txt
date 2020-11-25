@@ -135,8 +135,10 @@ E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\Ges
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.csprojAssemblyReference.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.AssemblyInfoInputs.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.AssemblyInfo.cs
-E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.csproj.CoreCompileInputs.cache
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.csproj.CopyComplete
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.dll
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.pdb
 E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.genruntimeconfig.cache
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\bin\Debug\netcoreapp3.1\Moq.dll
+E:\Faculdade\2020_2\programação web\códigos\códigos aula\GestaoDeProduto\GestaoDeProduto\GestaoDeProduto.Test\obj\Debug\netcoreapp3.1\GestaoDeProduto.Test.csproj.CoreCompileInputs.cache

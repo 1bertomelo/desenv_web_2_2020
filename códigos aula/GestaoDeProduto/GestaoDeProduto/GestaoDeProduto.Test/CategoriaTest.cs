@@ -1,6 +1,8 @@
+using GestaoDeProduto.Context;
 using GestaoDeProduto.Models;
 using GestaoDeProduto.Repositories;
 using GestaoDeProduto.Services;
+using Moq;
 using NUnit.Framework;
 using System;
 
@@ -14,7 +16,9 @@ namespace GestaoDeProduto.Test
         {
             Categoria novaCategoria = new Categoria();
             novaCategoria.titulo = "Teste";
-            CategoriaService _service = new CategoriaService();
+            GestaoDeProdutoContext gestaoDeProduto = new GestaoDeProdutoContext();
+            CategoriaRepository categoriaRepository = new CategoriaRepository(gestaoDeProduto);
+            CategoriaService _service = new CategoriaService(categoriaRepository);
             int retorno = _service.insere(novaCategoria);
             Assert.Greater(retorno, 0);
         }
@@ -25,7 +29,9 @@ namespace GestaoDeProduto.Test
         {
             Categoria novaCategoria = new Categoria();
             novaCategoria.titulo = "teste1";
-            CategoriaService _service = new CategoriaService();
+            GestaoDeProdutoContext gestaoDeProduto = new GestaoDeProdutoContext();
+            CategoriaRepository categoriaRepository = new CategoriaRepository(gestaoDeProduto);
+            CategoriaService _service = new CategoriaService(categoriaRepository);
             var ex = Assert.Throws<Exception>(() => _service.insere(novaCategoria));
             Assert.That(ex.Message, Is.EqualTo("Nome contem números , só é permitido letras"));            
         }
@@ -36,7 +42,9 @@ namespace GestaoDeProduto.Test
         {
             Categoria novaCategoria = new Categoria();
             novaCategoria.titulo = "";
-            CategoriaService _service = new CategoriaService();
+            GestaoDeProdutoContext gestaoDeProduto = new GestaoDeProdutoContext();
+            CategoriaRepository categoriaRepository = new CategoriaRepository(gestaoDeProduto);
+            CategoriaService _service = new CategoriaService(categoriaRepository);
             var ex = Assert.Throws<Exception>(() => _service.insere(novaCategoria));
             Assert.That(ex.Message, Is.EqualTo("Nome obrigatório."));
         }
@@ -46,7 +54,9 @@ namespace GestaoDeProduto.Test
         {
             Categoria novaCategoria = new Categoria();
             novaCategoria.titulo = "    ";
-            CategoriaService _service = new CategoriaService();
+            GestaoDeProdutoContext gestaoDeProduto = new GestaoDeProdutoContext();
+            CategoriaRepository categoriaRepository = new CategoriaRepository(gestaoDeProduto);
+            CategoriaService _service = new CategoriaService(categoriaRepository);
             var ex = Assert.Throws<Exception>(() => _service.insere(novaCategoria));
             Assert.That(ex.Message, Is.EqualTo("Nome obrigatório."));
         }
